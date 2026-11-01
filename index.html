@@ -1,0 +1,68 @@
+---
+layout: default
+---
+<section class="hero wrap">
+  {% if site.photo != "" %}<img class="hero-photo" src="{{ site.photo | relative_url }}" alt="{{ site.name }}">{% endif %}
+  <div>
+    <p class="eyebrow">{{ site.headline }}</p>
+    <h1>{{ site.name }}</h1>
+    <p class="intro">{{ site.intro }}</p>
+    <p class="location">{{ site.location }}</p>
+    <div class="hero-actions">
+      <a class="button primary" href="#projects">View projects</a>
+      {% if site.cv_file != "" %}<a class="button" href="{{ site.cv_file | relative_url }}">Download CV</a>{% endif %}
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="wrap section">
+  <h2>Projects</h2>
+  {% assign projects = site.projects | sort: "date" | reverse %}
+  <div class="grid">
+    {% for p in projects %}
+    <a class="card" href="{{ p.url | relative_url }}">
+      <div class="card-media">
+        {% if p.cover and p.cover != "" %}
+        <img src="{{ p.cover | relative_url }}" alt="" loading="lazy">
+        {% else %}
+        <div class="card-placeholder"><span>{{ p.software | first }}</span></div>
+        {% endif %}
+      </div>
+      <div class="card-body">
+        {% if p.status %}<span class="status status-{{ p.status | slugify }}">{{ p.status }}</span>{% endif %}
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.summary }}</p>
+        {% if p.tags %}
+        <ul class="tags">{% for t in p.tags %}<li>{{ t }}</li>{% endfor %}</ul>
+        {% endif %}
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="training" class="wrap section">
+  <h2>Training &amp; certificates</h2>
+  <ul class="training">
+    {% for c in site.data.certificates %}
+    <li>
+      <div>
+        <strong>{{ c.title }}</strong>
+        <span class="muted">{{ c.issuer }}{% if c.date %} · {{ c.date }}{% endif %}</span>
+      </div>
+      {% if c.url and c.url != "" %}<a href="{{ c.url }}">{{ c.link_label | default: "View badge" }} →</a>
+      {% elsif c.status %}<span class="status status-{{ c.status | slugify }}">{{ c.status }}</span>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section id="contact" class="wrap section contact">
+  <h2>Contact</h2>
+  <p>Interested in CFD, heat transfer or compressor development roles. Happy to talk.</p>
+  <div class="hero-actions">
+    {% if site.email != "" %}<a class="button primary" href="mailto:{{ site.email }}">Email me</a>{% endif %}
+    {% if site.linkedin != "" %}<a class="button" href="{{ site.linkedin }}">LinkedIn</a>{% endif %}
+    {% if site.github != "" %}<a class="button" href="{{ site.github }}">GitHub</a>{% endif %}
+  </div>
+</section>

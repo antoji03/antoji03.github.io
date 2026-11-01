@@ -1,0 +1,14 @@
+# Cursos e certificados. Os mais recentes primeiro.
+# Campos: title, issuer, date, url (link do badge Credly), status (se ainda não acabaste)
+
+- title: "Rotating Fluids in Ansys Discovery"
+  issuer: "Ansys Innovation Courses"
+  date: "2026"
+  status: "In progress"
+  url: ""
+
+# Exemplo para o mestrado (tira os '#' e corrige o nome do curso e da universidade):
+# - title: "MSc in Mechanical Engineering"
+#   issuer: "University name"
+#   date: "2026"
+#   url: ""

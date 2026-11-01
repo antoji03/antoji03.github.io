@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.name }}</title>
+  <meta name="description" content="{{ page.summary | default: site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% if page.math %}
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+  {% endif %}
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">{{ site.name }}</a>
+      <nav class="nav">
+        <a href="{{ '/#projects' | relative_url }}">Projects</a>
+        <a href="{{ '/#training' | relative_url }}">Training</a>
+        <a href="{{ '/#contact' | relative_url }}">Contact</a>
+        {% if site.cv_file != "" %}<a class="nav-cv" href="{{ site.cv_file | relative_url }}">CV</a>{% endif %}
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© {{ site.time | date: "%Y" }} {{ site.name }}</span>
+      <span class="footer-links">
+        {% if site.linkedin != "" %}<a href="{{ site.linkedin }}">LinkedIn</a>{% endif %}
+        {% if site.github != "" %}<a href="{{ site.github }}">GitHub</a>{% endif %}
+        {% if site.email != "" %}<a href="mailto:{{ site.email }}">Email</a>{% endif %}
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
