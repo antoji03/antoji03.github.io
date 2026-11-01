@@ -23,7 +23,7 @@ layout: default
     <a class="card" href="{{ p.url | relative_url }}">
       <div class="card-media">
         {% if p.cover and p.cover != "" %}
-        <img src="{{ p.cover | relative_url }}" alt="" loading="lazy">
+        <img src="{{ p.cover | relative_url }}" alt="" loading="lazy"{% if p.cover_fit == "contain" %} class="contain"{% endif %}>
         {% else %}
         <div class="card-placeholder"><span>{{ p.software | first }}</span></div>
         {% endif %}

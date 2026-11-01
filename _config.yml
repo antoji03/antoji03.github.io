@@ -2,7 +2,7 @@
 # Dados pessoais — edita estes campos
 # ------------------------------------------------------------------
 name: "António Reis"
-headline: "Mechanical Engineer · CFD & Heat Transfer"
+headline: "Aerospace Engineer (MSc) · CFD & Heat Transfer"
 intro: >-
   I use computational fluid dynamics to understand and improve how fluids
   move and transfer heat — from airfoil flow control to rotating machinery.
@@ -10,7 +10,7 @@ intro: >-
   verification behind each one.
 location: "Portugal · open to relocation (Flanders / Netherlands)"
 email: ""            # ex.: "nome@exemplo.com" (deixa vazio para esconder)
-linkedin: ""         # ex.: "https://www.linkedin.com/in/teu-perfil"
+linkedin: "https://www.linkedin.com/in/antónio-reis-615471327"
 github: "https://github.com/antoji03"
 cv_file: ""          # ex.: "/assets/cv/CV.pdf" (deixa vazio para esconder)
 photo: ""            # ex.: "/assets/img/photo.jpg" (deixa vazio para esconder)

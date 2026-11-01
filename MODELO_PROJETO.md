@@ -9,6 +9,7 @@ methods: ["RANS", "k-omega SST", "Mesh independence study"]
 tags: ["CFD", "Heat transfer"]
 cover: "/assets/img/projects/NOME-DA-PASTA/cover.png"
 cover_caption: "Legenda da imagem principal."
+# cover_fit: contain           # tira o '#' se a capa for um gráfico largo (não corta a imagem no cartão)
 highlights:                    # 2 a 4 números-chave (apaga este bloco se não tiveres)
   - value: "3 %"
     label: "difference vs experiment"
