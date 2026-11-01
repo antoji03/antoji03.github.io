@@ -55,6 +55,21 @@ reproduced the manufactured field with a **mean absolute error of about
 6 × 10⁻⁵** (mean relative error ≈ 3 × 10⁻⁷). The error maps in the figure
 above show where the remaining discretisation error sits.
 
+## Results for each linear solver
+
+Each solver produced the same four-panel output: numerical solution,
+analytical (manufactured) solution, and the absolute and relative error
+between them. Note the different colour scales of the error maps.
+
+![Direct solver results](/assets/img/projects/fvm-2d-diffusion-solver/mms-direct-solution.png)
+*Direct solver (`numpy.linalg.solve`).*
+
+![Gauss–Seidel results](/assets/img/projects/fvm-2d-diffusion-solver/mms-gauss-seidel-solution.png)
+*Gauss–Seidel, converged to a residual of 10⁻⁸.*
+
+![SOR results](/assets/img/projects/fvm-2d-diffusion-solver/mms-sor-solution.png)
+*Gauss–Seidel with SOR (optimal relaxation factor ω ≈ 1.98), converged to a residual of 10⁻⁸.*
+
 ## Findings
 
 The full comparison of the three solvers (accuracy, time, memory and

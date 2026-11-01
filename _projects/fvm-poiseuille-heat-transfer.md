@@ -44,23 +44,41 @@ heating by **viscous dissipation**.
 The Péclet number compares heat carried by the flow (convection) with heat
 spread by conduction.
 
+### Pe = 1
+
 ![Temperature field, Pe = 1](/assets/img/projects/fvm-poiseuille-heat-transfer/temperature-pe1.png)
-*Pe = 1: conduction dominates. The fluid reaches the wall temperature within a few percent of the channel length.*
+*Conduction dominates. The fluid reaches the wall temperature within a few percent of the channel length.*
+
+![Temperature profiles across the channel, Pe = 1](/assets/img/projects/fvm-poiseuille-heat-transfer/profiles-pe1.png)
+*Temperature profiles at ten stations along the channel. Every station after the inlet is already at the wall temperature.*
+
+### Pe = 10
 
 ![Temperature field, Pe = 10](/assets/img/projects/fvm-poiseuille-heat-transfer/temperature-pe10.png)
-*Pe = 10: the thermal entrance region grows.*
+*The thermal entrance region grows.*
+
+![Temperature profiles across the channel, Pe = 10](/assets/img/projects/fvm-poiseuille-heat-transfer/profiles-pe10.png)
+*The centreline is still about 13 °C above the wall temperature at x/L ≈ 0.1.*
+
+### Pe = 100
 
 ![Temperature field, Pe = 100](/assets/img/projects/fvm-poiseuille-heat-transfer/temperature-pe100.png)
-*Pe = 100: convection dominates. Hot fluid persists along the centreline over most of the channel.*
+*Convection dominates. Hot fluid persists along the centreline over most of the channel.*
 
 ![Temperature profiles across the channel, Pe = 100](/assets/img/projects/fvm-poiseuille-heat-transfer/profiles-pe100.png)
-*Temperature profiles across the channel at several stations, Pe = 100. The near-uniform inlet profile develops into a parabolic shape as the thermal boundary layers merge.*
+*The near-uniform inlet profile develops into a parabolic shape as the thermal boundary layers merge.*
 
 ## Viscous dissipation
 
 With a non-zero **Brinkman number**, friction in the fluid adds heat,
-mostly near the walls where the shear is highest. Comparing Br = 0 with
-Br > 0 shows how much this extra heating changes the temperature field.
+mostly near the walls where the shear is highest. The solver can switch
+this source term on and off. The case below has it switched off (Br = 0).
+
+![Temperature field, Br = 0](/assets/img/projects/fvm-poiseuille-heat-transfer/temperature-br0.png)
+*Temperature field with viscous dissipation switched off (Br = 0).*
+
+![Temperature profiles across the channel, Br = 0](/assets/img/projects/fvm-poiseuille-heat-transfer/profiles-br0.png)
+*Temperature profiles along the channel for Br = 0.*
 
 ## What I learned
 
