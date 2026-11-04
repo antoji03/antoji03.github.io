@@ -187,4 +187,6 @@ figcaption, .prose img + em { display: block; margin-top: 8px; font-size: .88rem
 .prose th { font-weight: 600; color: var(--muted); font-size: .82rem; text-transform: uppercase; letter-spacing: .04em; }
 .prose td { font-variant-numeric: tabular-nums; }
 
+.prose mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; padding: 4px 0; }
+
 .project-links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px; }
