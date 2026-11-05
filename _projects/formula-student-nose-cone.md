@@ -15,11 +15,11 @@ highlights:
   - value: "4"
     label: "designs compared (Mark III to VI)"
   - value: "0.79"
-    label: "highest C_L/C_D (Mark III)"
+    label: "highest downforce-to-drag ratio (Mark III)"
   - value: "−12%"
-    label: "C_D from Mark III to Mark VI"
+    label: "drag from Mark III to Mark VI"
   - value: "−35%"
-    label: "C_L from Mark III to Mark VI"
+    label: "downforce from Mark III to Mark VI"
 ---
 
 ## Objective
