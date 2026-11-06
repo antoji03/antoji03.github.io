@@ -20,6 +20,8 @@ highlights:
     label: "torque on the impeller"
   - value: "≈ 0.55 W"
     label: "power absorbed by the impeller"
+  - value: "≈ 1.05"
+    label: "power number, at Re ≈ 3.7 × 10⁴"
 ---
 
 ## Objective
@@ -132,11 +134,24 @@ $$
 
 The mean velocity in the tank zone settles at **about 0.56 m/s**.
 
+The impeller has a radius of 48 mm, so $$D = 0.096$$ m. At $$N = 4$$ rev/s, this gives a tip speed
+of about 1.2 m/s and the two standard dimensionless numbers of a stirred tank:
+
+$$
+Re = \frac{\rho N D^2}{\mu} \approx 3.7 \times 10^4, \qquad
+N_p = \frac{P}{\rho N^3 D^5} \approx 1.05
+$$
+
+The Reynolds number is well within the turbulent range for a stirred tank, which supports the use of
+a turbulence model. The power number is the value to compare with published power curves for
+unbaffled tanks, which would be a useful next check.
+
 ## Results
 
 ### Horizontal plane through the impeller
 
-The velocity peaks near the blade tips, at about 1.5 m/s, and a wake trails from each tip.
+The velocity peaks near the blade tips, at about 1.5 m/s, somewhat above the tip speed of 1.2 m/s, and
+a wake trails from each tip.
 The pattern repeats on all six blades, as expected.
 
 ![Velocity vectors on the impeller plane](/assets/img/projects/mrf-mixing-tank/mrf-vectors-impeller-plane.webp)

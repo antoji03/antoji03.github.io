@@ -2,7 +2,7 @@
 title: "Torsion Test Rig for a 3D-Printed Wing"
 summary: "Design of a low-cost rig that twists a NACA 2412 wing using hanging masses and reads the angle on a built-in protractor, with finite element checks that identify the wing's load limit and the critical part of the rig."
 date: 2026-01-15
-status: "Completed"
+status: "Design study"
 context: "Applied aeroelasticity project"
 software: ["3D CAD", "Finite element analysis"]
 methods: ["Mechanical design", "Linear static FEA", "Sheet metal design"]
@@ -203,8 +203,8 @@ $$
 
 ## Limitations and next steps
 
-- **Numerical results only:** these are linear static simulations, and no measured results are shown
-  here. Plastic printed parts are not isotropic, and they deform non-linearly near failure. So the
+- **Design stage:** the rig was designed but not built, so all the results come from linear static
+  simulations, and none has been measured. Plastic printed parts are not isotropic, and they deform non-linearly near failure. So the
   wing's limit is an estimate, which a real test would need to confirm.
 - **No mesh study:** peak stresses at sharp corners are mesh dependent, so these peak values are
   indicative.
@@ -213,7 +213,7 @@ $$
   120 MPa and a safety factor of about 1.7. That is still above 1, but it is the next check to make.
 - **Bearings:** the load is almost static, so a check with the static load rating would be more
   appropriate.
-- **Next steps:** run the test, compare the measured stiffness with the simulation, add
+- **Next steps:** build the rig and run the test, compare the measured stiffness with the simulation, add
   finer instrumentation for the angle, and try other wing materials and airfoils.
 
 ## What I learned

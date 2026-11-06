@@ -17,7 +17,7 @@ highlights:
   - value: "5 mm"
     label: "chosen spacing between cells"
   - value: "30 kW"
-    label: "Endurance power chosen by the team"
+    label: "Endurance power selected"
   - value: "8 m/s"
     label: "minimum inlet speed from the 2D study"
 ---
@@ -238,8 +238,8 @@ results follow that trend.
 
 ### Decision: 30 kW
 
-The 30 kW case exceeded the 60 °C limit by 3.6 °C in the simulation. The team still chose
-30 kW, for two reasons: the case assumed constant maximum power, and the model could not
+The 30 kW case exceeded the 60 °C limit by 3.6 °C in the simulation. 30 kW was still
+selected, for two reasons: the case assumed constant maximum power, and the model could not
 capture every effect of the real airflow from the sidepod into the module. This judgement
 would need testing on the car to confirm it, as the next section explains.
 
@@ -301,7 +301,7 @@ justified with the car stationary, for example during testing.
 
 ## Could a valve keep water out?
 
-The team also studied a valve with a porous PTFE film, to stop water from entering the
+I also studied a valve with a porous PTFE film, to stop water from entering the
 battery. Fluent gave a mass flow of 0.1 kg/s at 10 m/s, which with an air density of
 1.2 kg/m³ gives the required flow:
 
@@ -331,7 +331,7 @@ would also be far below 65 mbar: the dynamic pressure of air at 10 m/s is only a
 - **Inlet condition:** the speed is imposed at the inlet of the domain, so simulating the
   sidepod would show how much air actually reaches the module.
 
-## Takeaways
+## What I learned
 
 - Passive air cooling works well within strict limits on area and packaging, but each
   gain has to be weighed against manufacturing and structure.
