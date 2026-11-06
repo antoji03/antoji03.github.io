@@ -8,9 +8,9 @@ software: ["Ansys Discovery", "Fluent Meshing", "Ansys Fluent 2024 R2"]
 methods: ["Multiple Reference Frame", "Steady RANS", "k-ω SST", "Poly-hexcore mesh"]
 tags: ["CFD", "Rotating machinery", "Turbulence", "Mixing"]
 math: true
-cover: "/assets/img/projects/mrf-mixing-tank/mrf-velocity-impeller-plane.png"
+cover: "/assets/img/projects/mrf-mixing-tank/mrf-cover-vectors.png"
 cover_fit: contain
-cover_caption: "Velocity magnitude on a horizontal plane through the impeller. The wakes curl away from the six blade tips."
+cover_caption: "Velocity vectors on a horizontal plane through the impeller, shown in place within the tank."
 highlights:
   - value: "240 rpm"
     label: "impeller and shaft speed"
@@ -154,11 +154,11 @@ The velocity peaks near the blade tips, at about 1.5 m/s, somewhat above the tip
 a wake trails from each tip.
 The pattern repeats on all six blades, as expected.
 
+![Velocity magnitude on the impeller plane](/assets/img/projects/mrf-mixing-tank/mrf-velocity-impeller-plane.png)
+*Velocity magnitude on the impeller plane. The wakes curl away from the six blade tips.*
+
 ![Velocity vectors on the impeller plane](/assets/img/projects/mrf-mixing-tank/mrf-vectors-impeller-plane.webp)
 *Velocity vectors on the impeller plane. The fluid swirls around the axis across the whole tank.*
-
-![Velocity vectors within the tank](/assets/img/projects/mrf-mixing-tank/mrf-vectors-tank-overview.png)
-*The same vectors, shown in place within the tank.*
 
 The static pressure shows the low-pressure zone behind each blade. The pressure difference
 between the two sides of a blade is the main source of the torque.
