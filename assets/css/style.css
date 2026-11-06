@@ -189,4 +189,30 @@ figcaption, .prose img + em { display: block; margin-top: 8px; font-size: .88rem
 
 .prose mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; padding: 4px 0; }
 
+/* ---------- Charts ---------- */
+.viz {
+  --series-1: #2a78d6; --series-2: #eb6834; --series-3: #1baf7a;
+  margin: 28px 0 8px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .viz { --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; }
+}
+.viz-legend { list-style: none; padding: 0; margin: 0 0 10px; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: .86rem; color: var(--muted); }
+.viz-legend li { display: flex; align-items: center; gap: 6px; margin: 0; }
+.viz-plot { display: block; width: 100%; height: auto; }
+.viz .s1 { fill: var(--series-1); stroke: var(--series-1); }
+.viz .s2 { fill: var(--series-2); stroke: var(--series-2); }
+.viz .s3 { fill: var(--series-3); stroke: var(--series-3); }
+.viz-legend svg { stroke: none; flex-shrink: 0; }
+.viz-plot polyline { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.viz-plot .pt > :not(.hit) { stroke: var(--bg); stroke-width: 2; paint-order: stroke; }
+.viz-plot .hit { fill: transparent; stroke: none; }
+.viz-plot .pt:hover > :not(.hit) { stroke: var(--text); }
+.viz-plot .grid { stroke: var(--border); stroke-width: 1; }
+.viz-plot .axis { stroke: var(--muted); stroke-width: 1; }
+.viz-plot text { fill: var(--muted); stroke: none; font-family: var(--font); }
+.viz-plot .tick { font-size: 13px; font-variant-numeric: tabular-nums; }
+.viz-plot .title { font-size: 14px; fill: var(--text); }
+.viz + p em { font-size: .88rem; color: var(--muted); font-style: normal; }
+
 .project-links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px; }
