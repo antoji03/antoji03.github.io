@@ -1,0 +1,17 @@
+<a class="card" href="{{ include.p.url | relative_url }}">
+  <div class="card-media">
+    {% if include.p.cover and include.p.cover != "" %}
+    <img src="{{ include.p.cover | relative_url }}" alt="" loading="lazy"{% if include.p.cover_fit == "contain" %} class="contain"{% endif %}>
+    {% else %}
+    <div class="card-placeholder"><span>{{ include.p.software | first }}</span></div>
+    {% endif %}
+  </div>
+  <div class="card-body">
+    {% if include.p.status %}<span class="status status-{{ include.p.status | slugify }}">{{ include.p.status }}</span>{% endif %}
+    <h3>{{ include.p.title }}</h3>
+    <p>{{ include.p.summary }}</p>
+    {% if include.p.tags %}
+    <ul class="tags">{% for t in include.p.tags %}<li>{{ t }}</li>{% endfor %}</ul>
+    {% endif %}
+  </div>
+</a>

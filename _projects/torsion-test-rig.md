@@ -2,6 +2,7 @@
 title: "Torsion Test Rig for a 3D-Printed Wing"
 summary: "Design of a low-cost rig that twists a NACA 2412 wing using hanging masses and reads the angle on a built-in protractor, with finite element checks that identify the wing's load limit and the critical part of the rig."
 date: 2026-01-15
+group: other
 status: "Design study"
 context: "Applied aeroelasticity project"
 software: ["3D CAD", "Finite element analysis"]

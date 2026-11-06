@@ -2,6 +2,7 @@
 title: "Convective Heat Transfer in Poiseuille Flow"
 summary: "Finite volume solver for the convection–diffusion energy equation in laminar channel flow, with viscous dissipation and a parametric study of the Péclet number."
 date: 2025-08-02
+group: cfd
 status: "Completed"
 context: "Numerical methods project"
 software: ["Python", "NumPy", "SciPy", "Matplotlib"]

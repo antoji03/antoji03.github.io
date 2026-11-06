@@ -2,6 +2,8 @@
 title: "FFA-W3-301 Airfoil: CFD Benchmark Against Wind Tunnel Data"
 summary: "2D RANS of a thick wind turbine airfoil in Ansys Fluent, with two mesh families compared against published wind tunnel measurements. It shows what agrees, what does not, and why a mesh study and a validation answer different questions."
 date: 2026-10-15
+featured: 2
+group: cfd
 status: "Completed"
 context: "MSc-level CFD benchmark"
 software: ["Ansys Fluent"]

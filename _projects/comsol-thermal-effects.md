@@ -2,6 +2,7 @@
 title: "Electrical and Thermal Effects in a Serpentine Conductor"
 summary: "A coupled electrical and thermal COMSOL study of a serpentine conductor on a plate, looking at current crowding at the bends, and how voltage and a heat source change the temperature."
 date: 2025-03-15
+group: other
 status: "Completed"
 context: "Sensors and actuators coursework"
 software: ["COMSOL Multiphysics"]

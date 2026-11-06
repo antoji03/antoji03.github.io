@@ -2,6 +2,7 @@
 title: "Selecting a NACA 5-Digit Airfoil with OpenFOAM"
 summary: "A parametric CFD study in OpenFOAM, testing 15 NACA 5-digit airfoils one digit group at a time to maximise a drag-weighted objective function. NACA 63114 gave the best result, with the top candidates close together."
 date: 2025-05-28
+group: cfd
 status: "Completed"
 context: "Computational methods project"
 software: ["OpenFOAM", "cfMesh", "Autodesk Inventor"]

@@ -2,6 +2,7 @@
 title: "Modelling an Ultrasonic Blood Flow Sensor in COMSOL"
 summary: "A 2D multiphysics model of a non-invasive transit-time flow sensor, coupling piezoelectricity, solid mechanics, acoustics and non-Newtonian blood flow, with an honest look at what its results can and cannot show."
 date: 2025-06-01
+group: other
 status: "Completed"
 context: "Sensors and actuators project"
 software: ["COMSOL Multiphysics"]

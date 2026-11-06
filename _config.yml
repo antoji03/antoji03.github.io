@@ -2,14 +2,13 @@
 # Dados pessoais — edita estes campos
 # ------------------------------------------------------------------
 name: "António Reis"
-headline: "Aerospace Engineer (MSc) · CFD & Heat Transfer"
+headline: "Welcome to my website"
 intro: >-
-  I use computational fluid dynamics to understand and improve how fluids
-  move and transfer heat — from airfoil flow control to rotating machinery.
-  This site collects my simulation projects, with the setup, results and
-  verification behind each one.
+  I'm an aerospace engineer with a strong passion for fluid mechanics,
+  thermodynamics and aerodynamics. Here are some of my personal favorite
+  projects.
 location: "Portugal · open to relocation (Flanders / Netherlands)"
-email: ""            # ex.: "nome@exemplo.com" (deixa vazio para esconder)
+email: "antonio.dreis03@gmail.com"
 linkedin: "https://www.linkedin.com/in/antónio-reis-615471327"
 github: "https://github.com/antoji03"
 cv_file: ""          # ex.: "/assets/cv/CV.pdf" (deixa vazio para esconder)

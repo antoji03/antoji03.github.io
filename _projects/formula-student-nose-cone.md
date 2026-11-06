@@ -2,6 +2,7 @@
 title: "Formula Student Nose Cone Aerodynamics"
 summary: "CFD comparison of four nose cone designs for the Formula Student University of Minho car, built with a parametric CAD and simulation workflow. It shows the trade-off between downforce and drag: from Mark III to Mark VI, drag falls 12% and downforce falls 35%."
 date: 2026-11-05
+group: cfd
 status: "Completed"
 context: "Formula Student University of Minho — Nose cone aerodynamics"
 software: ["Autodesk Inventor", "Ansys SpaceClaim", "Ansys Fluent"]

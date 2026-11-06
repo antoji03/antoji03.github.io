@@ -2,6 +2,7 @@
 title: "Conceptual Design of a Regional Turboprop Aircraft"
 summary: "From mission requirements to a 3D model: conceptual sizing of a 50-seat twin turboprop for 1000 m runways, using classical methods in MATLAB and a low-fidelity aerodynamic check in OpenVSP."
 date: 2026-11-06
+group: other
 status: "Completed"
 context: "Advanced aircraft design project"
 software: ["MATLAB", "OpenVSP", "VSPAERO"]
