@@ -93,9 +93,10 @@ Enquanto não acabares o curso, deixa `url: ""` e põe `status: "In progress"`.
 
 ## 5. Comentários e rascunhos
 
-Tudo o que estiver entre `<!--` e `-->` nos ficheiros `.md` **não aparece**
-no site. Os projetos que preparei têm notas assim, em português, para te
-guiar. Podes deixá-las lá ou apagá-las.
+O texto entre `<!--` e `-->` não aparece na página, mas **fica visível no
+código-fonte do site e no repositório público**. Nunca escrevas lá notas
+internas ou informação confidencial. Guarda as notas no `NOTAS_REVISAO.md`,
+que fica só neste computador.
 
 ## Checklist de um bom projeto
 
