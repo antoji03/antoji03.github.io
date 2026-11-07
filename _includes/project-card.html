@@ -7,7 +7,6 @@
     {% endif %}
   </div>
   <div class="card-body">
-    {% if include.p.status %}<span class="status status-{{ include.p.status | slugify }}">{{ include.p.status }}</span>{% endif %}
     <h3>{{ include.p.title }}</h3>
     <p>{{ include.p.summary }}</p>
     {% if include.p.tags %}

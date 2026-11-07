@@ -41,22 +41,6 @@ layout: default
   </div>
 </section>
 
-<section id="training" class="wrap section">
-  <h2>Training &amp; certificates</h2>
-  <ul class="training">
-    {% for c in site.data.certificates %}
-    <li>
-      <div>
-        <strong>{{ c.title }}</strong>
-        <span class="muted">{{ c.issuer }}{% if c.date %} · {{ c.date }}{% endif %}</span>
-      </div>
-      {% if c.url and c.url != "" %}<a href="{{ c.url }}">{{ c.link_label | default: "View badge" }} →</a>
-      {% elsif c.status %}<span class="status status-{{ c.status | slugify }}">{{ c.status }}</span>{% endif %}
-    </li>
-    {% endfor %}
-  </ul>
-</section>
-
 <section id="contact" class="wrap section contact">
   <h2>Contact</h2>
   <p>Currently looking for a full-time job opportunity. Happy to talk!</p>

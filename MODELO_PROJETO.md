@@ -4,7 +4,6 @@ summary: "Uma frase que explica o projeto e o resultado principal."
 date: 2026-11-01
 group: cfd                     # cfd ou other (a secção da página inicial)
 # featured: 5                  # opcional: posição em "Personal favorites"
-status: "Completed"            # ou "In progress"
 context: "Personal project"    # ex.: "Ansys Innovation Courses", "MSc thesis", "Course project"
 software: ["Ansys Fluent"]
 methods: ["RANS", "k-omega SST", "Mesh independence study"]

@@ -8,7 +8,7 @@ cerca de 1 minuto depois, o site está atualizado.
 
 ```
 _config.yml              ← o teu nome, título, links (LinkedIn, email, CV)
-_data/certificates.yml   ← cursos, badges e certificados
+_data/certificates.yml   ← cursos e certificados (não aparecem no site)
 _projects/               ← um ficheiro .md por projeto
 assets/img/projects/     ← uma pasta de imagens por projeto
 assets/cv/               ← o teu CV em PDF (opcional)
@@ -78,18 +78,11 @@ A linha em itálico logo a seguir à imagem aparece como legenda.
 
 **Esconder um projeto** sem o apagar: acrescenta `published: false` no topo.
 
-## 4. Adicionar um certificado ou badge
+## 4. Certificados
 
-No `_data/certificates.yml`, acrescenta um bloco no topo:
-
-```yaml
-- title: "Nome do curso"
-  issuer: "Ansys Innovation Courses"
-  date: "2026"
-  url: "https://www.credly.com/badges/..."   # link do badge
-```
-
-Enquanto não acabares o curso, deixa `url: ""` e põe `status: "In progress"`.
+A secção de certificados foi retirada do site. A lista continua guardada em
+`_data/certificates.yml`. Se quiseres voltar a mostrá-la, pede ajuda para repor
+a secção no `index.html` e o link no menu.
 
 ## 5. Comentários e rascunhos
 
