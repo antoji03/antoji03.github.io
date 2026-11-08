@@ -22,9 +22,9 @@ highlights:
     label: "faster with SOR than Gauss–Seidel"
 links:
   - label: "Code on GitHub"
-    url: "https://github.com/antoji03/2D-Pure-Diffusion-CFD-Solver"
+    url: "https://github.com/antonioreis-aerospace/2D-Pure-Diffusion-CFD-Solver"
   - label: "Technical report (PDF)"
-    url: "https://github.com/antoji03/2D-Pure-Diffusion-CFD-Solver/blob/main/2D_Pure_Diffusion_CFD_Code_Report.pdf"
+    url: "https://github.com/antonioreis-aerospace/2D-Pure-Diffusion-CFD-Solver/blob/main/2D_Pure_Diffusion_CFD_Code_Report.pdf"
 ---
 
 ## Objective

@@ -21,7 +21,7 @@ highlights:
     label: "linear solvers"
 links:
   - label: "Code on GitHub"
-    url: "https://github.com/antoji03/CFD.FVM-Poiseuille-Heat-Transfer"
+    url: "https://github.com/antonioreis-aerospace/CFD.FVM-Poiseuille-Heat-Transfer"
 ---
 
 ## Objective
