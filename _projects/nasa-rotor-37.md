@@ -2,6 +2,7 @@
 title: "NASA Rotor 37: Transonic Compressor Rotor in Ansys CFX"
 summary: "Steady RANS of the NASA Rotor 37 transonic axial compressor rotor in Ansys CFX, from a TurboGrid mesh to the shock structure in the blade passage, with a convergence check and a comparison against the NASA test data."
 date: 2026-11-08
+featured: 1
 group: cfd
 context: "Turbomachinery CFD course case, extended with own validation"
 software: ["Ansys TurboGrid", "Ansys CFX", "CFD-Post"]

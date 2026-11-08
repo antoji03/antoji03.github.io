@@ -2,7 +2,7 @@
 title: "2D Finite Volume Solver for Heat Diffusion"
 summary: "A finite volume solver for steady heat diffusion with variable conductivity, written in Python. Verified with a manufactured solution, showing second-order accuracy, and used to compare direct and iterative linear solvers."
 date: 2025-01-15
-featured: 4
+featured: 5
 group: cfd
 status: "Completed"
 context: "MSc coursework — Advanced Computational Methods for Aerospace Applications, University of Minho"
