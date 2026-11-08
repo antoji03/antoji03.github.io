@@ -159,20 +159,42 @@ to the suction side of the next blade.*
 ![Relative Mach number at 90% span](/assets/img/projects/nasa-rotor-37/mach-90.png)
 *Relative Mach number at 90% span, where the blade speed and the inlet Mach number are higher.*
 
+The shock changes along the span, because the blade speed grows with the radius. The contour
+lines at 20% and 80% span show it more clearly:
+
+<div class="fig-grid">
+<figure><img src="/assets/img/projects/nasa-rotor-37/mrel-20.png" alt="Relative Mach number at 20% span" loading="lazy"><figcaption>20% span: the inflow is only just supersonic, and a small supersonic pocket forms on the suction side near the leading edge.</figcaption></figure>
+<figure><img src="/assets/img/projects/nasa-rotor-37/mrel-80.png" alt="Relative Mach number at 80% span" loading="lazy"><figcaption>80% span: the whole inflow is supersonic, at about Mach 1.4, and the shock is stronger.</figcaption></figure>
+</div>
+
+![Relative Mach number at the leading edge along the span](/assets/img/projects/nasa-rotor-37/span-mrel-le.png)
+*Circumferentially averaged relative Mach number at the leading edge, from hub (0) to casing (1).*
+
+At the leading edge, the relative Mach number rises from **1.11 at the hub to 1.48 at the tip**.
+The NASA design values were 1.13 at the hub and 1.48 at the tip, so the inflow to the blade is
+well reproduced.
+
 ![Relative Mach number with vectors](/assets/img/projects/nasa-rotor-37/mach-vectors.png)
 *Close-up at 50% span with velocity vectors. Behind the shock, the flow next to the suction side
 slows down sharply.*
 
 The shock decelerates the flow from supersonic to subsonic in a very short distance. The blade
-loading at mid-span shows where it reaches the blade:
+loading shows where it reaches the blade. Each chart gives the static pressure on the blade from
+leading edge (0) to trailing edge (1): the upper curve is the pressure side and the lower curve
+the suction side.
 
-![Blade loading at 50% span](/assets/img/projects/nasa-rotor-37/blade-loading-50.png)
-*Static pressure on the blade at 50% span, from leading edge (0) to trailing edge (1). The upper
-curve is the pressure side and the lower curve the suction side.*
+<div class="fig-grid">
+<figure><img src="/assets/img/projects/nasa-rotor-37/blade-loading-20.png" alt="Blade loading at 20% span" loading="lazy"><figcaption>20% span.</figcaption></figure>
+<figure><img src="/assets/img/projects/nasa-rotor-37/blade-loading-50.png" alt="Blade loading at 50% span" loading="lazy"><figcaption>50% span.</figcaption></figure>
+<figure><img src="/assets/img/projects/nasa-rotor-37/blade-loading-80.png" alt="Blade loading at 80% span" loading="lazy"><figcaption>80% span.</figcaption></figure>
+</div>
 
-On the suction side, the pressure stays near 60–70 kPa until about 40% of the chord, then jumps
-to about 100 kPa within a few percent of the chord. This jump is the shock hitting the suction
-surface.
+On the suction side, the pressure stays low, near 55–70 kPa, over the front of the blade, then
+jumps by about 40 kPa within a few percent of the chord. This jump is the shock hitting the
+suction surface. It moves back along the span: from about 37% of the chord at 20% span to about
+40% at mid-span and 52% at 80% span. Behind the shock, the two curves come closer, so most of the
+blade force is produced over the front half of the blade. The short gap in the 80% curve is a
+gap in the plotted line, not in the flow.
 
 ### Where the losses come from
 
@@ -196,6 +218,65 @@ low-speed regions change along the span:
 edge show the shock across the span, and the lowest Mach numbers appear near the hub at the back
 of the blade.*
 
+<div class="fig-grid">
+<figure><img src="/assets/img/projects/nasa-rotor-37/pressure-meridional.png" alt="Static pressure on the meridional plane" loading="lazy"><figcaption>Static pressure on the meridional plane. The pressure rises through the blade row, and is highest near the casing behind the blade, where the swirl pushes the flow outwards.</figcaption></figure>
+<figure><img src="/assets/img/projects/nasa-rotor-37/cm-meridional.png" alt="Meridional velocity on the meridional plane" loading="lazy"><figcaption>Meridional velocity, with vectors. The flow accelerates near the hub at the leading edge and slows down near the casing inside the blade row.</figcaption></figure>
+</div>
+
+### At the trailing edge
+
+<div class="fig-grid">
+<figure><img src="/assets/img/projects/nasa-rotor-37/mrel-te.png" alt="Relative Mach number at the trailing edge plane" loading="lazy"><figcaption>Relative Mach number on a plane at the trailing edge. The wakes are the narrow low-speed bands behind each blade.</figcaption></figure>
+<figure><img src="/assets/img/projects/nasa-rotor-37/entropy-te.png" alt="Entropy at the trailing edge plane" loading="lazy"><figcaption>Entropy on the same plane. The highest entropy is in the wake near the casing, most likely where the tip clearance flow and the shock interact.</figcaption></figure>
+</div>
+
+![Streamlines through the passage](/assets/img/projects/nasa-rotor-37/streamlines.png)
+*Streamlines through two passages, coloured by velocity. The flow enters fastest near the tip and
+leaves the blade row more slowly.*
+
+### Through the rotor
+
+CFD-Post averaged the flow on ten planes from the inlet (0) to the outlet (1) of the domain. The
+blade sits between about 0.25 and 0.55:
+
+<div class="fig-grid">
+<figure><img src="/assets/img/projects/nasa-rotor-37/streamwise-pressure.png" alt="Total and static pressure along the passage" loading="lazy"><figcaption>Total and static pressure.</figcaption></figure>
+<figure><img src="/assets/img/projects/nasa-rotor-37/streamwise-temperature.png" alt="Total and static temperature along the passage" loading="lazy"><figcaption>Total and static temperature.</figcaption></figure>
+<figure><img src="/assets/img/projects/nasa-rotor-37/streamwise-mach.png" alt="Absolute and relative Mach number along the passage" loading="lazy"><figcaption>Absolute and relative Mach number.</figcaption></figure>
+<figure><img src="/assets/img/projects/nasa-rotor-37/streamwise-entropy.png" alt="Entropy along the passage" loading="lazy"><figcaption>Static entropy.</figcaption></figure>
+</div>
+
+- **Total pressure and temperature** rise only across the blade, where the work is done, and stay
+  almost constant downstream.
+- **The relative Mach number** falls from about 1.3 to 0.7 across the blade, mostly through the
+  shock. The absolute Mach number rises, because the rotor adds swirl.
+- **Entropy** rises by about 26.6 J/(kg·K) between the inlet and the trailing edge, and by another
+  4.9 J/(kg·K) after it. About **15% of the losses happen downstream of the blade**, as the wakes
+  mix with the rest of the flow.
+- Downstream of the blade, the static pressure falls from about 143 kPa to 132 kPa and the
+  absolute Mach number keeps rising, because the annulus area continues to decrease.
+
+### Along the span
+
+<div class="fig-grid">
+<figure><img src="/assets/img/projects/nasa-rotor-37/span-angles-le.png" alt="Flow angles at the leading edge along the span" loading="lazy"><figcaption>Absolute (alpha) and relative (beta) flow angles at the leading edge.</figcaption></figure>
+<figure><img src="/assets/img/projects/nasa-rotor-37/span-angles-te.png" alt="Flow angles at the trailing edge along the span" loading="lazy"><figcaption>Absolute (alpha) and relative (beta) flow angles at the trailing edge.</figcaption></figure>
+<figure><img src="/assets/img/projects/nasa-rotor-37/span-mrel-te.png" alt="Relative Mach number at the trailing edge along the span" loading="lazy"><figcaption>Relative Mach number at the trailing edge.</figcaption></figure>
+<figure><img src="/assets/img/projects/nasa-rotor-37/span-mabs-te.png" alt="Absolute Mach number at the trailing edge along the span" loading="lazy"><figcaption>Absolute Mach number at the trailing edge.</figcaption></figure>
+</div>
+
+The flow turning is very different along the span. The relative flow angle changes from about
+−57° to −23° at the hub, a turning of about 34°, but only from about −65° to −56° at the tip,
+about 9°. Near the hub, where the blade speed is lower, the blade has to turn the flow more to do
+the same work. Near the tip, most of the pressure rise comes from the shock instead.
+
+![Meridional velocity at the trailing edge along the span](/assets/img/projects/nasa-rotor-37/span-cm-te.png)
+*Meridional velocity at the trailing edge. It drops sharply in the last 10% of the span.*
+
+The meridional velocity at the trailing edge falls from about 179 m/s at 90% span to 160 m/s at
+the casing. This is the blockage caused by the tip clearance flow and the casing boundary layer,
+which carry less mass flow through the passage.
+
 ### Overall results
 
 | Quantity | Inlet | Outlet |
@@ -218,22 +299,8 @@ casing on the fluid, which the energy balance shows, is one expected source of t
 ## Comparison with the NASA test data
 
 The NASA measurements give the overall operating curve of the isolated rotor at design speed,
-from choke towards stall. The values below are the blind test operating curve as tabulated by
-Boretti (2010). The CFX point, at 20.66 kg/s or 98.7% of the measured choke flow, is plotted on it.
-
-<p class="muted" style="margin-bottom:4px"><strong>Total pressure ratio</strong></p>
-{% include rotor37-chart-pr.html %}
-
-<p class="muted" style="margin-bottom:4px"><strong>Total temperature ratio</strong></p>
-{% include rotor37-chart-tr.html %}
-
-<p class="muted" style="margin-bottom:4px"><strong>Adiabatic efficiency</strong></p>
-{% include rotor37-chart-eff.html %}
-
-*Experimental operating curve at design speed against the Ansys CFX operating point. Hover over
-a point to see its value.*
-
-At the same mass flow, the closest measured point is at 20.67 kg/s:
+from choke towards stall, as tabulated by Boretti (2010) for the blind test. The CFX point is at
+20.66 kg/s, or 98.7% of the measured choke flow. The closest measured point is at 20.67 kg/s:
 
 | Quantity | NASA experiment | Ansys CFX | Difference |
 |---|---|---|---|
@@ -249,8 +316,7 @@ measurement.
 
 ### What the comparison shows
 
-- **The pressure ratio is close.** The difference is 1.7%, and the predicted value sits only a
-  little above the measured operating curve.
+- **The pressure ratio is close.** The difference is 1.7%.
 - **The temperature rise is too high.** The model predicts about 6% more work input than measured.
   As the pressure rise is closer than the temperature rise, the predicted efficiency is lower.
 - **Most of the original blind test predictions showed the same trend**, overpredicting both the
