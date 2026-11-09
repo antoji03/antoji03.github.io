@@ -9,6 +9,7 @@ methods: ["Steady RANS", "k-ε", "Rotating frame, single passage", "Experimental
 tags: ["CFD", "Turbomachinery", "Compressors", "Validation"]
 math: true
 cover: "/assets/img/projects/nasa-rotor-37/cover-mach-annulus.png"
+card_cover: "/assets/img/projects/nasa-rotor-37/card-mach-annulus.png"
 cover_caption: "Relative Mach number at 50% span, with the single-passage solution repeated around all 36 blades."
 highlights:
   - value: "2.101"

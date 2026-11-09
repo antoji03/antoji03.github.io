@@ -1,7 +1,8 @@
 <a class="card" href="{{ include.p.url | relative_url }}">
   <div class="card-media">
-    {% if include.p.cover and include.p.cover != "" %}
-    <img src="{{ include.p.cover | relative_url }}" alt="" loading="lazy"{% if include.p.cover_fit == "contain" %} class="contain"{% endif %}>
+    {% assign card_img = include.p.card_cover | default: include.p.cover %}
+    {% if card_img and card_img != "" %}
+    <img src="{{ card_img | relative_url }}" alt="" loading="lazy"{% if include.p.cover_fit == "contain" %} class="contain"{% endif %}>
     {% else %}
     <div class="card-placeholder"><span>{{ include.p.software | first }}</span></div>
     {% endif %}
