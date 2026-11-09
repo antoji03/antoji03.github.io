@@ -2,7 +2,7 @@
 title: "Air Cooling of a Formula Student Accumulator"
 summary: "2D and 3D CFD design of the passive air cooling for a 432-cell battery in an electric Formula Student car, from cell spacing and wall openings to the power and airflow limits at 35 °C."
 date: 2025-06-15
-featured: 4
+featured: 5
 group: cfd
 status: "Completed"
 context: "Formula Student University of Minho — Accumulator cooling"

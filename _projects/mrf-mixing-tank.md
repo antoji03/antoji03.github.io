@@ -2,7 +2,7 @@
 title: "MRF Simulation of a Stirred Mixing Tank"
 summary: "Steady 3D CFD of a six-blade impeller stirring water at 240 rpm, using the Multiple Reference Frame method in Ansys Fluent, from geometry preparation to the torque and power on the impeller."
 date: 2026-11-06
-featured: 2
+featured: 3
 group: cfd
 status: "Completed"
 context: "Personal study, based on the mixing tank case from the Ansys Innovation Courses"
