@@ -4,7 +4,6 @@ summary: "Steady RANS of the NASA Rotor 37 transonic axial compressor rotor in A
 date: 2026-11-08
 featured: 1
 group: cfd
-context: "Turbomachinery CFD course case, extended with own validation"
 software: ["Ansys TurboGrid", "Ansys CFX", "CFD-Post"]
 methods: ["Steady RANS", "k-ε", "Rotating frame, single passage", "Experimental validation"]
 tags: ["CFD", "Turbomachinery", "Compressors", "Validation"]
@@ -343,17 +342,6 @@ Several simplifications in this model can explain the gap:
   difference comes from each.
 - Moving the averaging planes to stations 1 and 4 would allow a comparison of the radial profiles
   of pressure and temperature ratio, which is where most codes struggle on this rotor.
-
-## What I learned
-
-- How a transonic compressor rotor works: a supersonic relative flow, a passage shock, and the
-  shock-boundary layer interaction that generates most of the loss.
-- How to set up a rotating-frame turbomachinery case in TurboGrid and CFX, and use the CFD-Post
-  turbo tools.
-- Why the residuals are not enough to judge convergence, and how monitors and conservation
-  balances complete the picture.
-- How to compare CFD with test data fairly: same mass flow, same definition of efficiency, and a
-  clear list of what the model leaves out.
 
 ## References
 

@@ -4,7 +4,6 @@ summary: "Steady RANS of a three-stage axial compressor (six blade rows) in Ansy
 date: 2026-11-09
 featured: 2
 group: cfd
-context: "Turbomachinery CFD course case, extended with own analysis against the design specification"
 software: ["Ansys CFX", "CFD-Post"]
 methods: ["Steady RANS", "k-ω SST", "Mixing-plane (stage) interfaces", "Design verification"]
 tags: ["CFD", "Turbomachinery", "Compressors", "Multistage"]
@@ -336,14 +335,3 @@ work on the fluid in the rotating frame.
   interaction between the rows, at a much higher cost.
 - **Unconverged rear stages.** The residuals in R3, S2 and S3 stall at about $$10^{-4}$$. A
   transient run could show whether the hub separation is really unsteady.
-
-## What I learned
-
-- How to set up a multistage compressor in CFX, with stage (mixing-plane) interfaces between
-  rotating and stationary rows with different blade numbers.
-- How to read a CFD result as a check of a design: the mass flow is an output, and the pressure
-  ratio, efficiency and temperature rise have to be consistent with each other.
-- How the work splits between the stages, and why the first stage, with the coldest air and a
-  transonic rotor, behaves differently from the rear ones.
-- How to use the spanwise and blade-row data to find a specific loss mechanism, here the hub
-  corner separation in the stators, and connect it to the convergence behaviour.
