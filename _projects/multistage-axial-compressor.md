@@ -192,7 +192,8 @@ The pressure ratio is **not shared equally**. Compared with the equal split of 1
   first stage.
 
 The three stage power values add up to 8.46 MW. This matches the energy balance
-$$\dot m \, c_p \, \Delta T_0 = 85.77 \times 1004.4 \times 98.2 \approx 8.46$$ MW.
+$$\dot m \, c_p \, \Delta T_0$$: with 85.77 kg/s, $$c_p$$ = 1004.4 J/(kg·K) and
+$$\Delta T_0$$ = 98.2 K, it also gives 8.46 MW.
 
 ## Flow field
 
