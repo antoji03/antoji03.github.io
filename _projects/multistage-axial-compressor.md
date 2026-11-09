@@ -50,11 +50,11 @@ The goals were:
 From these values, the design implies a total temperature ratio and temperature rise of
 
 $$
-\tau = 1 + \frac{\pi^{(\gamma-1)/\gamma} - 1}{\eta} = 1 + \frac{2.25^{0.2857} - 1}{0.78} = 1.334,
-\qquad \Delta T_0 = 96.3 \text{ K}
+\tau = 1 + \frac{\pi^{(\gamma-1)/\gamma} - 1}{\eta}
 $$
 
-and a shaft power of about $$\dot m \, c_p \, \Delta T_0 \approx 8.2$$ MW. If the three stages
+With $$\pi = 2.25$$ and $$\eta = 0.78$$, this gives $$\tau = 1.334$$, a temperature rise of
+$$\Delta T_0 = 96.3$$ K, and a shaft power of about $$\dot m \, c_p \, \Delta T_0 \approx 8.2$$ MW. If the three stages
 shared the pressure rise equally, each would have a pressure ratio of $$2.25^{1/3} = 1.31$$.
 
 ## Geometry and mesh
