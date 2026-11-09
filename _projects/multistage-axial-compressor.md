@@ -87,10 +87,11 @@ I come back to this in the convergence and limitations sections.
 | Fluid | Air, ideal gas with constant $$c_p$$ |
 | Energy | Total energy, including viscous work |
 | Turbulence | k-ω SST, automatic wall treatment |
-| Inlet | Total pressure 101.325 kPa, total temperature 288.15 K, normal to the boundary |
+| Inlet | $$p_0$$ = 101.325 kPa, $$T_0$$ = 288.15 K, normal to the boundary |
 | Outlet | Average static pressure 180 kPa |
-| Rotor-stator interfaces | Stage (mixing plane), constant total pressure, GGI connection |
-| Walls | Adiabatic, no slip. The casing is stationary (counter-rotating in the rotor frames) |
+| Rotor-stator interfaces | Stage (mixing plane), GGI connection |
+| Walls | Adiabatic, no slip |
+| Casing | Stationary (counter-rotating wall in the rotor frames) |
 | Advection scheme | High resolution |
 | Run | 500 iterations, 4 h 25 min on 16 cores |
 
@@ -171,11 +172,15 @@ steady RANS model with mixing planes. The compressor is operating close to its d
 
 ## How the work is shared between the stages
 
-| Stage | Pressure ratio | Temperature ratio | Polytropic efficiency | Power | Flow coefficient | Head coefficient |
+| Stage | $$\pi$$ | $$\tau$$ | $$\eta_\text{poly}$$ | Power | $$\phi$$ | $$\psi$$ |
 |---|---|---|---|---|---|---|
 | 1 | 1.369 | 1.118 | 81.6 % | 2.93 MW | 0.68 | 0.33 |
 | 2 | 1.260 | 1.091 | 82.9 % | 2.52 MW | 0.74 | 0.28 |
 | 3 | 1.324 | 1.099 | 84.9 % | 3.01 MW | 0.75 | 0.34 |
+
+Here $$\pi$$ and $$\tau$$ are the total pressure and temperature ratios of the stage,
+$$\eta_\text{poly}$$ the polytropic efficiency, $$\phi$$ the inlet flow coefficient and
+$$\psi$$ the polytropic head coefficient, from the CFD-Post turbo report.
 
 The pressure ratio is **not shared equally**. Compared with the equal split of 1.31 per stage:
 
